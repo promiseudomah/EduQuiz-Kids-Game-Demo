@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IBeginDragHandler,IEndDragHandler, IDragHandler
+public class ZebraDragDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IBeginDragHandler,IEndDragHandler, IDragHandler
 {
 
     [SerializeField] private Canvas canvas;
@@ -50,8 +50,7 @@ public class DragDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, I
     {
         //Debug.Log("OnEndDrag");
         canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
-        
+        canvasGroup.blocksRaycasts = true;  
     }
 
     public void OnPointerDown(PointerEventData eventData) 
@@ -63,10 +62,6 @@ public class DragDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, I
     public void OnPointerUp(PointerEventData eventData)
     {
         Debug.Log("OnPointerUp");
-
-        Debug.Log("Wrong Drop");
-
-        //drop sprite in the wrong place
 
       
         SpriteObject.transform.position = InitialPosition;

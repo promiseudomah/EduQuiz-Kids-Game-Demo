@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Guess.unity
+    path: Assets/Scenes/Menu.unity
+    guid: 84b50f383ab466c42b496c6502d3e2a6
+  - enabled: 1
+    path: Assets/Scenes/Puzzles.unity
     guid: 79673b680fc8a9c489fbca13fdb53850
   m_configObjects: {}
