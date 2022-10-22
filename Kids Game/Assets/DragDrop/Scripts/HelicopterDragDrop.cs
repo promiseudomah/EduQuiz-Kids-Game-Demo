@@ -2,6 +2,7 @@
     ------------------- peziudomah codes -------------------
 
                         Kid's Game Project
+                    Helicopters Drag and Drop Script
 
     --------------------------------------------------------
  */
@@ -23,6 +24,7 @@ public class HelicopterDragDrop : MonoBehaviour, IPointerUpHandler, IPointerDown
     public Vector2 InitialPosition;
 
     public GameObject SpriteObject;
+    //Helicopter Image Object
 
     //bool to check for drop status, and save status.
 
