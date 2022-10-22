@@ -2,6 +2,7 @@
     ------------------- peziudomah codes -------------------
 
                         Kid's Game Project
+                   Zebra Drag and Drop Script
 
     --------------------------------------------------------
  */
@@ -23,6 +24,7 @@ public class ZebraDragDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandl
     public Vector2 InitialPosition;
 
     public GameObject SpriteObject;
+    //Zebra Image Object
 
     //bool to check for drop status, and save status.
 
