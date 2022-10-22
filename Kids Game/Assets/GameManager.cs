@@ -2,6 +2,7 @@
     ------------------- peziudomah codes -------------------
 
                         Kid's Game Project
+                        GameManager Script.
 
     --------------------------------------------------------
  */
@@ -19,9 +20,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] Puzzle_ObjectContainer;
     //Puzzle Pieces *Containers
+    // For this project there are only going to be three Puzzle Containers (Dinosaur. Helicopter, Zebra).
 
     public GameObject[] Puzzle_VictoryScreen;
     //Puzzle Pieces *Victory Screens
+    // For this project there are only going to be three victory screens, (Dinosaur Victory, Helicopter Victory, Zebra Victory).
 
     public int Count = 0;
     //count
@@ -30,13 +33,19 @@ public class GameManager : MonoBehaviour
     {
         InstancegameManager = this;
         Count = 0;
+
         CallNextPuzzle();
+        //call next puzzle method
     }
 
     public void Counter()
     {
         Count += 1;
-        CountText.text = Count.ToString()+ "/10";
+        //Count for the Puzzles completed
+
+        CountText.text = Count.ToString() + "/" + Puzzle_ObjectContainer.Length;
+
+        // Puzzle_ObjectContainer.Length to be the total amount of puzzles in the scene.
     }
 
     public void CallNextPuzzle()
@@ -79,6 +88,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(scenename);
         //load up the Game scene with button and scenename specified in editor
-    }
 
+        //Two Scenes are Added to the index - Menu Scene, Puzzle Scene, Math Scene.
+
+    }
 }
