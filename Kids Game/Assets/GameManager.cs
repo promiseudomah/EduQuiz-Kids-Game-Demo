@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager InstancegameManager;
 
-    public Text CountText;
+    public Text[] CountText;
     //count text object
 
     public GameObject[] Puzzle_ObjectContainer;
@@ -43,8 +43,10 @@ public class GameManager : MonoBehaviour
         Count += 1;
         //Count for the Puzzles completed
 
-        CountText.text = Count.ToString() + "/" + Puzzle_ObjectContainer.Length;
-
+        for (int i = 0; i < CountText.Length; i++)
+        {
+            CountText[i].text = Count.ToString() + "/" + (Puzzle_ObjectContainer.Length - 1);
+        }
         // Puzzle_ObjectContainer.Length to be the total amount of puzzles in the scene.
     }
 
@@ -90,6 +92,16 @@ public class GameManager : MonoBehaviour
         //load up the Game scene with button and scenename specified in editor
 
         //Two Scenes are Added to the index - Menu Scene, Puzzle Scene, Math Scene.
+
+    }
+
+    void Update()
+    {
+        //for Puzzle Counter
+        for (int i = 0; i < CountText.Length; i++)
+        {
+            PlayerPrefs.SetString("PuzzleCount", CountText[i].text);
+        }
 
     }
 }

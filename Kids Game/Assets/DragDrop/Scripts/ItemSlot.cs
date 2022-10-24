@@ -30,9 +30,14 @@ public class ItemSlot : MonoBehaviour, IDropHandler {
             Debug.Log(x);
             //count value
 
-            string y = GameManager.InstancegameManager.CountText.text;
-            Debug.Log(y);
-            //countText string
+            for (int i = 0; i < GameManager.InstancegameManager.CountText.Length; i++)
+            {
+                string y = GameManager.InstancegameManager.CountText[i].text;
+                Debug.Log(y);
+                //countText string
+            }
+
+
 
 
 

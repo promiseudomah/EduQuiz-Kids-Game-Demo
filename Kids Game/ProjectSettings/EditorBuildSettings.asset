@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzles.unity
     guid: 79673b680fc8a9c489fbca13fdb53850
+  - enabled: 1
+    path: Assets/Scenes/Math.unity
+    guid: f96bc7f72c8f1e84a9836f6746984198
   m_configObjects: {}
