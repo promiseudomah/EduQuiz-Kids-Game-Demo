@@ -4,7 +4,7 @@ This project is a small-scale demonstration of a simple educational game designe
 
 ## Features 🌟
 - Limited number of math quiz questions to reinforce basic mathematical concepts ➕➖✖️➗🧮
-- Subset of animal quiz questions to introduce children to various animals and their characteristics 🐾🌍
+- Subset of animal quiz questions to introduce children to various animals and other objects 🐾🌍
 - Simple user interface for easy navigation and interaction 📱🖐️
 - Basic gameplay mechanics to simulate the quiz experience 🎮🧠
 - Mobile optimized for smooth performance on compatible devices 📱💨
